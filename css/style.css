@@ -104,7 +104,16 @@ a {
     width: 100%;
     height: auto;
     display: block;
-    margin-bottom: 60px;
+    margin: 40px auto 0;
+    max-width: 100%;
+}
+
+.article-header-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 60px;
+    max-width: 100%;
 }
 
 /* Featured Section */
@@ -403,6 +412,514 @@ a {
         height: auto;
         display: block;
         margin: 0;
+    }
+}
+
+/* Article Page Styles */
+.article-post {
+    width: 100%;
+}
+
+.article-header {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.article-title {
+    font-family: "New York Extra Large", serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2em;
+    margin-bottom: 24px;
+    color: #000000;
+    text-align: center;
+}
+
+.article-subtitle {
+    font-family: "SF Mono", monospace;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7em;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.article-content {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.article-text {
+    font-family: "New York Medium", serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.7em;
+    color: #000000;
+    margin-bottom: 24px;
+}
+
+.article-heading {
+    font-family: "New York Extra Large", serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.3em;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.article-subheading {
+    font-family: "New York Extra Large", serif;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.3em;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    color: #000000;
+}
+
+.article-image-container {
+    margin: 40px 0;
+}
+
+.article-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.article-image-caption {
+    font-family: "SF Pro Text", sans-serif;
+    font-size: 14px;
+    line-height: 1.4em;
+    color: #666666;
+    margin-top: 12px;
+    text-align: center;
+    font-style: italic;
+}
+
+.article-list {
+    font-family: "New York Medium", serif;
+    font-size: 20px;
+    line-height: 1.7em;
+    margin: 24px 0;
+    padding-left: 24px;
+    color: #000000;
+    list-style: none;
+}
+
+.article-list li {
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.article-list li::before {
+    content: "◆";
+    position: absolute;
+    left: 0;
+    color: #000000;
+    font-size: 12px;
+}
+
+.article-signature {
+    font-family: "New York Medium", serif;
+    font-size: 20px;
+    line-height: 1.7em;
+    color: #000000;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+.article-share {
+    max-width: 640px;
+    margin: 60px auto 0;
+    padding: 0 20px;
+}
+
+.share-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.share-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #000000;
+    font-family: "SF Pro Text", sans-serif;
+    font-size: 16px;
+    transition: background-color 0.2s;
+}
+
+.share-button:hover {
+    background-color: #F5F5F5;
+}
+
+.share-icon {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.article-tags-section {
+    max-width: 640px;
+    margin: 40px auto 0;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.tags-label {
+    font-family: "New York Medium", serif;
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 12px;
+    display: inline-block;
+}
+
+.article-tags {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+}
+
+.tag-link {
+    font-family: "New York Medium", serif;
+    font-size: 20px;
+    color: #000000;
+    text-decoration: underline;
+}
+
+.tag-link:hover {
+    text-decoration: none;
+}
+
+.article-divider {
+    max-width: 640px;
+    margin: 40px auto;
+    height: 1px;
+    border-top: 1px dashed #CCCCCC;
+}
+
+.article-author {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.author-avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.author-info {
+    flex: 1;
+}
+
+.author-name {
+    font-family: "SF Pro Display", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: #000000;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.author-bio {
+    font-family: "New York Medium", serif;
+    font-size: 20px;
+    line-height: 1.7em;
+    color: #000000;
+    margin: 0;
+}
+
+@media (min-width: 900px) {
+    .article-title {
+        font-size: 54px;
+        margin-bottom: 32px;
+    }
+
+    .article-subtitle {
+        font-size: 20px;
+        margin-bottom: 60px;
+    }
+
+    .hero-image {
+        margin: 60px auto 0;
+    }
+
+    .article-header-image {
+        margin: 0 auto 80px;
+    }
+
+    .article-content {
+        max-width: 640px;
+        padding: 0;
+    }
+
+    .article-text {
+        font-size: 20px;
+        margin-bottom: 28px;
+    }
+
+    .article-heading {
+        font-size: 44px;
+        margin-top: 60px;
+        margin-bottom: 24px;
+    }
+
+    .article-subheading {
+        font-size: 32px;
+        margin-top: 48px;
+        margin-bottom: 20px;
+    }
+
+    .article-share {
+        padding: 0;
+    }
+
+    .article-tags-section {
+        padding: 0;
+    }
+
+    .article-author {
+        padding: 0;
+    }
+}
+
+/* Read Next Section - Article Page Only */
+.article-page .read-next-section {
+    max-width: 1200px;
+    margin: 80px auto 0;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.article-page .read-next-heading {
+    position: relative;
+    max-width: 640px;
+    margin: 0 auto 48px;
+    overflow: visible;
+}
+
+.article-page .read-next-section {
+    overflow: visible;
+}
+
+.article-page .read-next-line {
+    width: 100vw;
+    max-width: 1400px;
+    height: 2px;
+    background-color: #000000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+.article-page .read-next-icon {
+    width: auto;
+    height: auto;
+    max-width: 100px;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+.article-page .read-next-title {
+    font-family: "New York Extra Large", serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.3em;
+    color: #000000;
+    margin-top: 24px;
+    margin-bottom: 0;
+}
+
+.article-page .read-next-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-bottom: 80px;
+    width: 100%;
+}
+
+.article-page .read-next-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.article-page .read-next-image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 16px;
+}
+
+.article-page .read-next-card-title {
+    font-family: "SF Pro Display", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.3em;
+    color: #000000;
+    text-align: left;
+    margin: 0;
+}
+
+/* Newsletter Section - Article Page Only */
+.article-page .newsletter-section {
+    max-width: 640px;
+    margin: 0 auto 80px;
+    padding: 0 20px;
+}
+
+.article-page .newsletter-form {
+    border: 1px solid #000000;
+    padding: 40px 24px;
+    text-align: center;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+}
+
+.article-page .newsletter-title {
+    font-family: "New York Extra Large", serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.3em;
+    color: #000000;
+    margin-bottom: 16px;
+}
+
+.article-page .newsletter-description {
+    font-family: "New York Medium", serif;
+    font-size: 20px;
+    line-height: 1.7em;
+    color: #000000;
+    margin-bottom: 40px;
+}
+
+.article-page .newsletter-input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+
+.article-page .newsletter-input {
+    width: 100%;
+    padding: 14px 18px;
+    border: 1px solid #000000;
+    background-color: #FFFFFF;
+    font-family: "New York Medium", serif;
+    font-size: 16px;
+    color: #000000;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.article-page .newsletter-input:focus {
+    border-color: #000000;
+}
+
+.article-page .newsletter-input::placeholder {
+    color: #999999;
+}
+
+.article-page .newsletter-button {
+    width: 100%;
+    padding: 14px 32px;
+    background-color: #000000;
+    color: #FFFFFF;
+    border: none;
+    font-family: "SF Pro Text", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.article-page .newsletter-button:hover {
+    background-color: #333333;
+}
+
+@media (min-width: 900px) {
+    .article-page .read-next-section {
+        padding: 0 24px;
+    }
+
+    .article-page .read-next-heading {
+        max-width: 640px;
+    }
+
+    .article-page .read-next-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 40px;
+    }
+
+    .article-page .read-next-image {
+        aspect-ratio: 16 / 9;
+    }
+
+    .article-page .newsletter-section {
+        padding: 0;
+    }
+
+    .article-page .newsletter-form {
+        padding: 60px 48px;
+    }
+
+    .article-page .newsletter-input-group {
+        flex-direction: row;
+        gap: 0;
+        align-items: stretch;
+    }
+
+    .article-page .newsletter-input {
+        flex: 1;
+        min-width: 0;
+        border-right: none;
+        border-radius: 0;
+    }
+
+    .article-page .newsletter-button {
+        width: 160px;
+        flex-shrink: 0;
+        border-radius: 0;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 768px) {
+    .article-page .read-next-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .article-page .newsletter-input-group {
+        flex-direction: column;
     }
 }
 
