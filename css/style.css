@@ -1,3 +1,24 @@
+/* CSS Variables */
+:root {
+    /* Colors */
+    --color-black: #000000;
+    --color-white: #FFFFFF;
+    
+    /* Typography */
+    --font-primary: "New York Medium", serif;
+    --font-heading: "New York Extra Large", serif;
+    --font-small: "New York Small", serif;
+    --font-display: "SF Pro Display", sans-serif;
+    --font-mono: "SF Mono", monospace;
+    --font-text: "SF Pro Text", sans-serif;
+    
+    /* Spacing */
+    --space-sm: 16px;
+    --space-md: 24px;
+    --space-lg: 40px;
+    --space-xl: 64px;
+}
+
 /* Reset and Base Styles */
 * {
     margin: 0;
@@ -43,6 +64,13 @@ a {
     line-height: 1.193359375em;
     margin-bottom: 16px;
     text-align: center;
+}
+
+.main-nav {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .site-nav {
@@ -279,6 +307,10 @@ a {
     .site-logo {
         font-size: 54px;
         margin-bottom: 0;
+    }
+
+    .main-nav {
+        gap: 32px;
     }
 
     .site-nav {
