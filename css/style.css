@@ -90,6 +90,10 @@ a {
     color: #000000;
 }
 
+.mobile-menu-toggle {
+    display: none; /* Oculto por defecto (desktop) */
+}
+
 /* Main Content */
 .site-main {
     max-width: 1200px;
@@ -914,12 +918,276 @@ a {
 }
 
 @media (max-width: 768px) {
+    /* Evitar overflow horizontal */
+    .article-page {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    /* Header Mobile: Logo izquierda, Nav oculto (hamburger se añade con JS normalmente) */
+    .article-page .site-header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 20px;
+        border-bottom: 2px solid #000000;
+    }
+
+    .article-page .site-logo {
+        margin-bottom: 0;
+        width: auto;
+        height: auto;
+        max-height: 40px;
+    }
+
+    .article-page .main-nav {
+        display: none; /* Ocultar nav en mobile (hamburger se implementa con JS) */
+    }
+
+    .article-page .mobile-menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 24px;
+        color: #000000;
+        cursor: pointer;
+        padding: 8px;
+        line-height: 1;
+    }
+
+    .article-page .mobile-menu-toggle .hamburger-icon {
+        display: block;
+    }
+
+    /* Main content: ancho 100% con padding lateral */
+    .article-page .site-main {
+        max-width: 100%;
+        padding: 0 24px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Hero: H1 + subtítulo + imagen, centrado */
+    .article-page .article-header {
+        text-align: center;
+        margin-bottom: 24px;
+        padding: 0;
+    }
+
+    .article-page .article-title {
+        font-size: 28px;
+        line-height: 1.2em;
+        margin-bottom: 16px;
+        text-align: center;
+    }
+
+    .article-page .article-subtitle {
+        font-size: 14px;
+        margin-bottom: 32px;
+        text-align: center;
+    }
+
+    .article-page .hero-image {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto 32px;
+        display: block;
+    }
+
+    .article-page .article-header-image {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto 40px;
+        display: block;
+    }
+
+    /* Contenido del artículo: ancho 100%, padding lateral, legibilidad */
+    .article-page .article-content {
+        max-width: 100%;
+        width: 100%;
+        padding: 0 24px;
+        box-sizing: border-box;
+    }
+
+    .article-page .article-text {
+        font-size: 18px;
+        line-height: 1.7em;
+        margin-bottom: 20px;
+    }
+
+    .article-page .article-heading {
+        font-size: 24px;
+        line-height: 1.3em;
+        margin-top: 32px;
+        margin-bottom: 16px;
+    }
+
+    .article-page .article-subheading {
+        font-size: 22px;
+        line-height: 1.3em;
+        margin-top: 28px;
+        margin-bottom: 12px;
+    }
+
+    .article-page .article-list {
+        font-size: 18px;
+        margin: 20px 0;
+        padding-left: 20px;
+    }
+
+    .article-page .article-signature {
+        font-size: 18px;
+        margin-top: 32px;
+    }
+
+    .article-page .article-image-container {
+        margin: 32px 0;
+    }
+
+    .article-page .article-image {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Secciones finales: Share, Tags, Author */
+    .article-page .article-share {
+        max-width: 100%;
+        padding: 0 24px;
+        margin: 40px auto 0;
+    }
+
+    .article-page .share-buttons {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .article-page .share-button {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .article-page .article-tags-section {
+        max-width: 100%;
+        padding: 0 24px;
+        margin: 32px auto 0;
+    }
+
+    .article-page .article-divider {
+        max-width: 100%;
+        margin: 32px 24px;
+    }
+
+    .article-page .article-author {
+        max-width: 100%;
+        padding: 0 24px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 16px;
+    }
+
+    .article-page .author-avatar {
+        width: 80px;
+        height: 80px;
+    }
+
+    .article-page .author-name {
+        font-size: 14px;
+    }
+
+    .article-page .author-bio {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    /* What to read next: 1 columna */
+    .article-page .read-next-section {
+        max-width: 100%;
+        padding: 0 24px;
+        margin: 60px auto 0;
+    }
+
+    .article-page .read-next-heading {
+        max-width: 100%;
+        margin-bottom: 32px;
+    }
+
+    .article-page .read-next-line {
+        width: 100vw;
+        max-width: 100%;
+        left: 50%;
+    }
+
+    .article-page .read-next-title {
+        font-size: 24px;
+        margin-top: 16px;
+    }
+
     .article-page .read-next-grid {
         grid-template-columns: 1fr;
+        gap: 32px;
+        margin-bottom: 60px;
+    }
+
+    .article-page .read-next-image {
+        width: 100%;
+        max-width: 100%;
+        aspect-ratio: 16 / 9;
+    }
+
+    .article-page .read-next-card-title {
+        font-size: 16px;
+    }
+
+    /* Newsletter: form apilado */
+    .article-page .newsletter-section {
+        max-width: 100%;
+        padding: 0 24px;
+        margin: 0 auto 60px;
+    }
+
+    .article-page .newsletter-form {
+        padding: 32px 20px;
+    }
+
+    .article-page .newsletter-title {
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+
+    .article-page .newsletter-description {
+        font-size: 18px;
+        margin-bottom: 32px;
     }
 
     .article-page .newsletter-input-group {
         flex-direction: column;
+        gap: 12px;
+    }
+
+    .article-page .newsletter-input {
+        width: 100%;
+        padding: 12px 16px;
+        font-size: 16px;
+    }
+
+    .article-page .newsletter-button {
+        width: 100%;
+        padding: 12px 24px;
+    }
+
+    /* Footer */
+    .article-page .site-footer {
+        padding: 0;
+        margin: 0;
+    }
+
+    .article-page .footer-logo-image {
+        width: 100%;
+        max-width: 100%;
     }
 }
 
