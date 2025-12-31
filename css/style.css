@@ -12,6 +12,11 @@
     --font-mono: "SF Mono", monospace;
     --font-text: "SF Pro Text", sans-serif;
     
+    /* Web-safe font stacks */
+    --font-serif: Georgia, "Times New Roman", Times, serif;
+    --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    --font-mono-safe: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    
     /* Spacing */
     --space-sm: 16px;
     --space-md: 24px;
@@ -1193,4 +1198,243 @@ a {
 
 .articles-section{
     padding-bottom: 80px;
+}
+
+/* Readme Page Styles */
+.readme-page {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.readme-page .site-main {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.readme-hero {
+    background-color: #FFD700;
+    width: 100%;
+    padding: 80px 0;
+    margin-bottom: 0;
+    box-sizing: border-box;
+}
+
+.readme-hero-content {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 24px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.readme-version {
+    font-family: var(--font-mono-safe);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5em;
+    color: #666666;
+    margin: 0 0 16px 0;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.readme-title {
+    font-family: var(--font-serif);
+    font-weight: 700;
+    font-size: 120px;
+    line-height: 1.1em;
+    color: #000000;
+    margin: 0;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.readme-content-wrapper {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 24px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.readme-section {
+    margin: 80px 0;
+    max-width: 100%;
+}
+
+.readme-section:first-of-type {
+    margin-top: 80px;
+}
+
+.readme-heading {
+    font-family: var(--font-serif);
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 1.3em;
+    color: #000000;
+    margin-bottom: 32px;
+}
+
+.readme-text {
+    font-family: var(--font-serif);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.7em;
+    color: #000000;
+    margin-bottom: 24px;
+}
+
+.readme-text:last-child {
+    margin-bottom: 0;
+}
+
+.readme-blockquote {
+    border-left: 2px solid #000000;
+    padding-left: 20px;
+    margin-left: 0;
+}
+
+.readme-intro {
+    font-family: var(--font-serif);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.7em;
+    color: #000000;
+    margin-bottom: 40px;
+}
+
+.readme-font-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-left: 3px solid #000000;
+    padding-left: 16px;
+}
+
+.readme-font-item {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.readme-font-item:last-child {
+    margin-bottom: 0;
+}
+
+.font-name {
+    font-family: var(--font-serif);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2em;
+    color: #000000;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.font-name--pixel {
+    font-family: var(--font-mono-safe);
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0.5px 0.5px 0px rgba(0, 0, 0, 0.3);
+    color: #000000;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.readme-font-usage {
+    font-family: var(--font-sans);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5em;
+    color: #000000;
+    display: block;
+    margin-left: 0;
+}
+
+.readme-font-source {
+    font-family: var(--font-sans);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5em;
+    color: #000000;
+    display: block;
+    margin-left: 0;
+}
+
+.readme-font-source a {
+    color: #000000;
+    text-decoration: underline;
+}
+
+.readme-font-source a:hover {
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .readme-hero {
+        padding: 60px 0;
+    }
+
+    .readme-hero-content {
+        padding: 0 20px;
+    }
+
+    .readme-content-wrapper {
+        padding: 0 20px;
+        max-width: 100%;
+    }
+
+    .readme-title {
+        font-size: 80px;
+    }
+
+    .readme-version {
+        font-size: 12px;
+    }
+
+    .readme-section {
+        margin: 60px 0;
+    }
+
+    .readme-section:first-of-type {
+        margin-top: 60px;
+    }
+
+    .readme-heading {
+        font-size: 32px;
+        margin-bottom: 24px;
+    }
+
+    .readme-text {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .readme-intro {
+        font-size: 18px;
+        margin-bottom: 32px;
+    }
+
+    .readme-font-list {
+        padding-left: 12px;
+    }
+
+    .font-name,
+    .font-name--pixel {
+        font-size: 28px;
+    }
+
+    .readme-font-usage,
+    .readme-font-source {
+        font-size: 13px;
+    }
+
+    .readme-font-item {
+        margin-bottom: 32px;
+    }
 }
